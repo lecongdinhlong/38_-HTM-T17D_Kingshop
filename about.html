@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Kingshop-FashionTemplate">
+    <meta name="keywords" content="Kingshop-Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kingshop | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="#">Đăng nhập</a>
+            </div>
+        </div>
+        <div class="offcanvas__nav__option">
+            <a href="" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+            <a href="./shopping-cart.html"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+            <div class="price">$0.00</div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__text">
+            <p>Miễn phí vận chuyển với hóa đơn trên 300.000 VNĐ.</p>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+    <!-- Header Section Begin -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="header__logo">
+                    <img src="img/logo.png" alt="logo" width="180" height="35">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <nav class="header__menu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="./index.html">Trang chủ</a></li>
+                        <li><a href="./shop.html">Shop</a></li>
+                        <li>
+                            <a href="#">Thông tin</a>
+                            <ul class="dropdown">
+                                <li><a href="./about.html">Giới thiệu</a></li>
+                                <li><a href="./shopping-cart.html">Giỏ hàng</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./blog.html">Tin tức</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="header__nav__option">
+                    <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <style>
+                        body {
+                            font-family: Arial, Helvetica, sans-serif;
+                        }
+
+                        /* Full-width input fields */
+                        input[type=text], input[type=password] {
+                            width: 100%;
+                            padding: 12px 20px;
+                            margin: 0;
+                            display: inline-block;
+                            border: 1px solid #ccc;
+                            box-sizing: border-box;
+                        }
+
+                        /* Set a style for all buttons */
+                        button {
+                            background-color: #04AA6D;
+                            color: white;
+                            padding: 4px 7px;
+                            margin: 0;
+                            border: none;
+                            cursor: pointer;
+                            width: 100%;
+                        }
+
+                            button:hover {
+                                opacity: 0.8;
+                            }
+
+                        login
+                        /* Extra styles for the cancel button */
+                        .cancelbtn {
+                            width: auto;
+                            padding: 5px 10px;
+                            background-color: #f44336;
+                        }
+
+                        /* Center the image and position the close button */
+                        .imgcontainer {
+                            text-align: center;
+                            margin: 24px 0 12px 0;
+                            position: relative;
+                        }
+
+                        img.avatar {
+                            border-radius: 50%;
+                        }
+
+                        .container {
+                            padding: 16px;
+                        }
+
+                        span.psw {
+                            float: right;
+                            padding-top: 16px;
+                        }
+
+                        /* The Modal (background) */
+                        .modal {
+                            display: none; /* Hidden by default */
+                            position: fixed; /* Stay in place */
+                            z-index: 1; /* Sit on top */
+                            left: 0;
+                            top: 0;
+                            width: 100%; /* Full width */
+                            height: 100%; /* Full height */
+                            overflow: auto; /* Enable scroll if needed */
+                            background-color: rgb(0,0,0); /* Fallback color */
+                            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                            padding-top: 60px;
+                        }
+
+                        /* Modal Content/Box */
+                        .modal-content {
+                            background-color: #fefefe;
+                            margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                            border: 1px solid #888;
+                            width: 80%; /* Could be more or less, depending on screen size */
+                        }
+
+                        /* The Close Button (x) */
+                        .close {
+                            position: absolute;
+                            right: 25px;
+                            top: 0;
+                            color: #000;
+                            font-size: 35px;
+                            font-weight: bold;
+                        }
+
+                            .close:hover,
+                            .close:focus {
+                                color: red;
+                                cursor: pointer;
+                            }
+
+                        /* Add Zoom Animation */
+                        .animate {
+                            -webkit-animation: animatezoom 0.6s;
+                            animation: animatezoom 0.6s
+                        }
+
+                        @-webkit-keyframes animatezoom {
+                            from {
+                                -webkit-transform: scale(0)
+                            }
+
+                            to {
+                                -webkit-transform: scale(1)
+                            }
+                        }
+
+                        @keyframes animatezoom {
+                            from {
+                                transform: scale(0)
+                            }
+
+                            to {
+                                transform: scale(1)
+                            }
+                        }
+
+                        /* Change styles for span and cancel button on extra small screens */
+                        @media screen and (max-width: 300px) {
+                            span.psw {
+                                display: block;
+                                float: none;
+                            }
+
+                            .cancelbtn {
+                                width: 100%;
+                            }
+                        }
+                    </style>
+                    </head>
+                    <body>
+
+                        <button onclick="document.getElementById('id01').style.display='block'" style="width:50%;">Đăng nhập</button>
+
+                        <div id="id01" class="modal">
+
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <img src="img/logo.jpg" alt="logo" class="avatar">
+                                </div>
+
+                                <div class="container">
+                                    <label for="uname"><b>Tên đăng nhập</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                    <label for="psw"><b>Mật khẩu</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                    <button type="submit">Đăng nhập</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div>
+                            </form>
+                        </div>
+
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById('id01');
+
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function (event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                    </body>
+                    <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+                    <div class="price">$0.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="canvas__open"><i class="fa fa-bars"></i></div>
+    </div>
+    </header>
+    <!-- Header Section End -->
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Giới thiệu</h4>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Home</a>
+                            <span>Giới thiệu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+    <!-- About Section Begin -->
+    <section class="about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about__pic">
+                        <img src="img/about/about-us.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="about__item">
+                        <h4>Chúng tôi là ai ?</h4>
+                        <p>King shop là shop quần áo thuần Việt đem lại trải nghiệm phong cách độc đáo nhất</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="about__item">
+                        <h4>Chúng tôi có gì ?</h4>
+                        <p>Nhiều lựa chọn quần áo khác nhau đem lại trải nghiệm cực kỳ hấp dẫn với đa dạng mẫu mã đặc sắc</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="about__item">
+                        <h4>Tại sao nên chọn chúng tôi? </h4>
+                        <p>Với mức giá hợp lý chúng tôi cam kết đem lại cho bạn trải nghiệm tốt nhất và những bộ cánh thời trang siêu hot. Ngoài ra chúng tôi còn có rất nhiều chương trình khuyến mãi hấp dẫn đang chờ đợi bạn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+    <!-- Testimonial Section Begin -->
+    <section class="testimonial">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 p-0">
+                    <div class="testimonial__text">
+                        <span class="icon_quotations"></span>
+                        <p>
+                            “Đối với tôi, phong cách chính là thứ thể hiện cá tính một cách tự do và can đảm.”
+                        </p>
+                        <div class="testimonial__author">
+                            <div class="testimonial__author__pic">
+                                <img src="img/about/testimonial-author.jpg" alt="">
+                            </div>
+                            <div class="testimonial__author__text">
+                                <h5>TIMOTHY JOHN</h5>
+                                <p>Theo nhà thiết kế thời trang nổi tiếng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-0">
+                    <div class="testimonial__pic set-bg" data-setbg="img/about/thoitrangviet.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section End -->
+    <!-- Counter Section Begin -->
+    <section class="counter spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <div class="counter__item__number">
+                            <h2 class="cn_num">102</h2>
+                        </div>
+                        <span>nghìn <br />Khách hàng</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <div class="counter__item__number">
+                            <h2 class="cn_num">30</h2>
+                        </div>
+                        <span>Cổ <br />đông</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <div class="counter__item__number">
+                            <h2 class="cn_num">102</h2>
+                        </div>
+                        <span>Lãnh <br />thổ</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <div class="counter__item__number">
+                            <h2 class="cn_num">98</h2>
+                            <strong>%</strong>
+                        </div>
+                        <span>Khách hàng <br />hài lòng</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter Section End -->
+    <!-- Team Section Begin -->
+    <section class="team spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Nhóm chúng tôi</span>
+                        <h2>Gồm 1 thành viên </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="team__item">
+                        <img src="img/about/avatar.jpg" alt="">
+                        <h4>Lê Công Định Long</h4>
+                        <span>MSSV: 18084201</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+    <!-- Client Section Begin -->
+    <section class="clients spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Cổ đông</span>
+                        <h2>Thương hiệu tài trợ</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                    <a href="#" class="client__item"><img src="img/clients/client-1.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                    <a href="#" class="client__item"><img src="img/clients/client-2.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                    <a href="#" class="client__item"><img src="img/clients/client-3.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                    <a href="#" class="client__item"><img src="img/clients/client-4.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                    <a href="#" class="client__item"><img src="img/clients/client-5.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                    <a href="#" class="client__item"><img src="img/clients/client-6.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                    <a href="#" class="client__item"><img src="img/clients/client-7.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                    <a href="#" class="client__item"><img src="img/clients/client-8.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Client Section End -->
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <p>Chất lượng phục vụ tốt luôn là kim chỉ nam của shop, chắc chắn sẽ đem lại cho bạn trải nghiệm tốt nhất.</p>
+                        <a href="#"><img src="img/payment.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Mua sắm</h6>
+                        <ul>
+                            <li><a href="#">Quần áo</a></li>
+                            <li><a href="#">Giầy</a></li>
+                            <li><a href="#">Phụ kiện</a></li>
+                            <li><a href="#">Khuyến mại</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Thông tin</h6>
+                        <ul>
+                            <li><a href="./contact.html">Liên hệ</a></li>
+                            <li><a href="#">Chính sách</a></li>
+                            <li><a href="#">Hổ trợ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Gửi ý kiến đóng góp</h6>
+                        <div class="footer__newslatter">
+                            <p>Chúng tôi sẽ luôn lắng nghe bạn và đem lại trải nghiệm tốt nhất</p>
+                            <p>Địa chỉ: 684 Phan Huy ích, p12, Gò Vấp. Hotline: 1988.0055</p>
+                            <form action="#">
+                                <input type="text" placeholder="">
+                                <button type="submit"><span class="icon_mail_alt"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <p>
+                            Copyright ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>2024
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

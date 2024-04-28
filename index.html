@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Kingshop-FashionTemplate">
+    <meta name="keywords" content="Kingshop-Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kingshop | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="#">Đăng nhập</a>
+            </div>
+        </div>
+        <div class="offcanvas__nav__option">
+            <a href="" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+            <a href="./shopping-cart.html"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+            <div class="price">$0.00</div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__text">
+            <p>Miễn phí vận chuyển với hóa đơn trên 300.000 VNĐ.</p>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+    <!-- Header Section Begin -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="header__logo">
+                    <img src="img/logo.png" alt="logo" width="180" height="35">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <nav class="header__menu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="./index.html">Trang chủ</a></li>
+                        <li><a href="./shop.html">Shop</a></li>
+                        <li>
+                            <a href="#">Thông tin</a>
+                            <ul class="dropdown">
+                                <li><a href="./about.html">Giới thiệu</a></li>
+                                <li><a href="./shopping-cart.html">Giỏ hàng</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./blog.html">Tin tức</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="header__nav__option">
+                    <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <style>
+                        body {
+                            font-family: Arial, Helvetica, sans-serif;
+                        }
+
+                        /* Full-width input fields */
+                        input[type=text], input[type=password] {
+                            width: 100%;
+                            padding: 12px 20px;
+                            margin: 0;
+                            display: inline-block;
+                            border: 1px solid #ccc;
+                            box-sizing: border-box;
+                        }
+
+                        /* Set a style for all buttons */
+                        button {
+                            background-color: #04AA6D;
+                            color: white;
+                            padding: 4px 7px;
+                            margin: 0;
+                            border: none;
+                            cursor: pointer;
+                            width: 100%;
+                        }
+
+                            button:hover {
+                                opacity: 0.8;
+                            }
+
+                        login
+                        /* Extra styles for the cancel button */
+                        .cancelbtn {
+                            width: auto;
+                            padding: 5px 10px;
+                            background-color: #f44336;
+                        }
+
+                        /* Center the image and position the close button */
+                        .imgcontainer {
+                            text-align: center;
+                            margin: 24px 0 12px 0;
+                            position: relative;
+                        }
+
+                        img.avatar {
+                            border-radius: 50%;
+                        }
+
+                        .container {
+                            padding: 16px;
+                        }
+
+                        span.psw {
+                            float: right;
+                            padding-top: 16px;
+                        }
+
+                        /* The Modal (background) */
+                        .modal {
+                            display: none; /* Hidden by default */
+                            position: fixed; /* Stay in place */
+                            z-index: 1; /* Sit on top */
+                            left: 0;
+                            top: 0;
+                            width: 100%; /* Full width */
+                            height: 100%; /* Full height */
+                            overflow: auto; /* Enable scroll if needed */
+                            background-color: rgb(0,0,0); /* Fallback color */
+                            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                            padding-top: 60px;
+                        }
+
+                        /* Modal Content/Box */
+                        .modal-content {
+                            background-color: #fefefe;
+                            margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                            border: 1px solid #888;
+                            width: 80%; /* Could be more or less, depending on screen size */
+                        }
+
+                        /* The Close Button (x) */
+                        .close {
+                            position: absolute;
+                            right: 25px;
+                            top: 0;
+                            color: #000;
+                            font-size: 35px;
+                            font-weight: bold;
+                        }
+
+                            .close:hover,
+                            .close:focus {
+                                color: red;
+                                cursor: pointer;
+                            }
+
+                        /* Add Zoom Animation */
+                        .animate {
+                            -webkit-animation: animatezoom 0.6s;
+                            animation: animatezoom 0.6s
+                        }
+
+                        @-webkit-keyframes animatezoom {
+                            from {
+                                -webkit-transform: scale(0)
+                            }
+
+                            to {
+                                -webkit-transform: scale(1)
+                            }
+                        }
+
+                        @keyframes animatezoom {
+                            from {
+                                transform: scale(0)
+                            }
+
+                            to {
+                                transform: scale(1)
+                            }
+                        }
+
+                        /* Change styles for span and cancel button on extra small screens */
+                        @media screen and (max-width: 300px) {
+                            span.psw {
+                                display: block;
+                                float: none;
+                            }
+
+                            .cancelbtn {
+                                width: 100%;
+                            }
+                        }
+                    </style>
+                    </head>
+                    <body>
+
+                        <button onclick="document.getElementById('id01').style.display='block'" style="width:50%;">Đăng nhập</button>
+
+                        <div id="id01" class="modal">
+
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <img src="img/logo.jpg" alt="logo" class="avatar">
+                                </div>
+
+                                <div class="container">
+                                    <label for="uname"><b>Tên đăng nhập</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                    <label for="psw"><b>Mật khẩu</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                    <button type="submit">Đăng nhập</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div>
+                            </form>
+                        </div>
+
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById('id01');
+
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function (event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                    </body>
+                    <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+                    <div class="price">$0.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="canvas__open"><i class="fa fa-bars"></i></div>
+    </div>
+    </header>
+    <!-- Header Section End -->
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-7 col-md-8">
+                            <div class="hero__text">
+                                <h6>Thời trang hè</h6>
+                                <h2>Dẫn đầu xu hướng - Bộ sưu tập 2024</h2>
+                                <p>
+                                    Bộ sưu tập chuyên tạo ra những sản phẩm thiết yếu sang trọng, phong cách siêu cuốn hút .
+                                </p>
+                                <a href="#" class="primary-btn">Mua ngay <span class="arrow_right"></span></a>
+                                <div class="hero__social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__items set-bg" data-setbg="img/hero/hero-2.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-7 col-md-8">
+                            <div class="hero__text">
+                                <h6>Bộ sưu tập cổ điển</h6>
+                                <h2>Tạo nên nét riêng - Đi đầu xu hướng</h2>
+                                <p> Nhiều nét chấm phá nổi bật đem lại trải nghiệm đọc đáo nhất</p>
+                                <a href="#" class="primary-btn">Mua ngay<span class="arrow_right"></span></a>
+                                <div class="hero__social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+    <!-- Product Section Begin -->
+    <p> </p>
+    <p> </p>
+    <section class="product spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="filter__controls">
+                        <li class="active" data-filter="*">Bán chạy hàng đầu</li>
+                        <li data-filter=".new-arrivals">Thời trang mới</li>
+                        <li data-filter=".hot-sales">Thời trang khuyến mãi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row product__filter">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
+                            <span class="label">Hàng mới</span>
+                            <ul class="product__hover">
+                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6>Giầy thể thao F2</h6>
+                            <a href="#" class="add-cart">+ Mua ngay</a>
+                            <div class="rating">
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <h5>$670.000 VNĐ </h5>
+                            <div class="product__color__select">
+                                <label for="pc-1">
+                                    <input type="radio" id="pc-1">
+                                </label>
+                                <label class="active black" for="pc-2">
+                                    <input type="radio" id="pc-2">
+                                </label>
+                                <label class="grey" for="pc-3">
+                                    <input type="radio" id="pc-3">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
+                            <ul class="product__hover">
+                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6>Áo khoắc nâu vàng </h6>
+                            <a href="#" class="add-cart">+ Mua ngay</a>
+                            <div class="rating">
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <h5>$570.000 VNĐ </h5>
+
+                            <div class="product__color__select">
+                                <label for="pc-4">
+                                    <input type="radio" id="pc-4">
+                                </label>
+                                <label class="active black" for="pc-5">
+                                    <input type="radio" id="pc-5">
+                                </label>
+                                <label class="grey" for="pc-6">
+                                    <input type="radio" id="pc-6">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product__item sale">
+                        <div class="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
+                            <span class="label">Giảm giá</span>
+                            <ul class="product__hover">
+                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6>Giầy Pocket đen</h6>
+                            <a href="#" class="add-cart">+ Mua ngay</a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <h5>$450.000 VNĐ</h5>
+                            <div class="product__color__select">
+                                <label for="pc-7">
+                                    <input type="radio" id="pc-7">
+                                </label>
+                                <label class="active black" for="pc-8">
+                                    <input type="radio" id="pc-8">
+                                </label>
+                                <label class="grey" for="pc-9">
+                                    <input type="radio" id="pc-9">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/product/product-4.jpg">
+                            <ul class="product__hover">
+                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6>Áo khoác Cap</h6>
+                            <a href="#" class="add-cart">+ Mua ngay</a>
+                            <div class="rating">
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <h5>$130.000 VNĐ</h5>
+                            <div class="product__color__select">
+                                <label for="pc-10">
+                                    <input type="radio" id="pc-10">
+                                </label>
+                                <label class="active black" for="pc-11">
+                                    <input type="radio" id="pc-11">
+                                </label>
+                                <label class="grey" for="pc-12">
+                                    <input type="radio" id="pc-12">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/product/product-5.jpg">
+                            <ul class="product__hover">
+                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6>Áo thun họa tiết đen</h6>
+                            <a href="#" class="add-cart">+ Mua ngay</a>
+                            <div class="rating">
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <h5>$317.000 VNĐ</h5>
+                            <div class="product__color__select">
+                                <label for="pc-13">
+                                    <input type="radio" id="pc-13">
+                                </label>
+                                <label class="active black" for="pc-14">
+                                    <input type="radio" id="pc-14">
+                                </label>
+                                <label class="grey" for="pc-15">
+                                    <input type="radio" id="pc-15">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                    <div class="product__item sale">
+                        <div class="product__item__pic set-bg" data-setbg="img/product/product-6.jpg">
+                            <span class="label">Giảm giá</span>
+                            <ul class="product__hover">
+                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6>Khăn đông tối giản</h6>
+                            <a href="#" class="add-cart">+ Mua ngay</a>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <h5>$247.000 VNĐ</h5>
+                            <div class="product__color__select">
+                                <label for="pc-16">
+                                    <input type="radio" id="pc-16">
+                                </label>
+                                <label class="active black" for="pc-17">
+                                    <input type="radio" id="pc-17">
+                                </label>
+                                <label class="grey" for="pc-18">
+                                    <input type="radio" id="pc-18">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/product/product-7.jpg">
+                            <ul class="product__hover">
+                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6>Cặp nữ thu đông</h6>
+                            <a href="#" class="add-cart">+ Mua ngay</a>
+                            <div class="rating">
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <h5>$400.000 VNĐ</h5>
+                            <div class="product__color__select">
+                                <label for="pc-19">
+                                    <input type="radio" id="pc-19">
+                                </label>
+                                <label class="active black" for="pc-20">
+                                    <input type="radio" id="pc-20">
+                                </label>
+                                <label class="grey" for="pc-21">
+                                    <input type="radio" id="pc-21">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/product/product-8.jpg">
+                            <ul class="product__hover">
+                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6>Áo giảm cổ điển 2</h6>
+                            <a href="#" class="add-cart">+ Mua ngay</a>
+                            <div class="rating">
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <h5>$275.000 VNĐ</h5>
+                            <div class="product__color__select">
+                                <label for="pc-22">
+                                    <input type="radio" id="pc-22">
+                                </label>
+                                <label class="active black" for="pc-23">
+                                    <input type="radio" id="pc-23">
+                                </label>
+                                <label class="grey" for="pc-24">
+                                    <input type="radio" id="pc-24">
+                                </label>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Section End -->
+    <!-- Categories Section Begin -->
+    <div class="text-center" ">
+        <img src="img/hero/hero-3.jpg" alt="banner giảm giá">
+    </div>
+        <!-- Categories Section End -->
+        <!-- Instagram Section Begin -->
+        <section class="instagram spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="instagram__pic">
+                            <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-1.jpg"></div>
+                            <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-2.jpg"></div>
+                            <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-3.jpg"></div>
+                            <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-4.jpg"></div>
+                            <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-5.jpg"></div>
+                            <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-6.jpg"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="instagram__text">
+                            <h2>Góc sản phẩm</h2>
+                            <p> Nhiều mẫu mã đa dạng nhất., chúng tôi sẽ đem lại cho bạn lựa chọn độc đáo nhất</p>
+                            <h3>#Kingshop_Fashion</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Instagram Section End -->
+        <!-- Latest Blog Section Begin -->
+        <section class="latest spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <span>Tin tức mới</span>
+                            <h2>Thời trang và phong cách</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="blog__item">
+                            <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-1.jpg"></div>
+                            <div class="blog__item__text">
+                                <span><img src="img/icon/calendar.png" alt=""> 16 tháng 3 2024</span>
+                                <h5>Thời trang dạo phố</h5>
+                                <a href="#">Đọc ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="blog__item">
+                            <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-2.jpg"></div>
+                            <div class="blog__item__text">
+                                <span><img src="img/icon/calendar.png" alt=""> 2 tháng 4 2024</span>
+                                <h5>Phong cách phối đồ 2024</h5>
+                                <a href="#">Đọc ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="blog__item">
+                            <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-3.jpg"></div>
+                            <div class="blog__item__text">
+                                <span><img src="img/icon/calendar.png" alt=""> 28 tháng 2 2024</span>
+                                <h5>Làm sao tạo ra điểm nhấn cho cá nhân?</h5>
+                                <a href="#">Đọc ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Latest Blog Section End -->
+        <!-- Footer Section Begin -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer__about">
+                            <div class="footer__logo">
+                                <a href="#"><img src="img/logo.png" alt=""></a>
+                            </div>
+                            <p>Chất lượng phục vụ tốt luôn là kim chỉ nam của shop, chắc chắn sẽ đem lại cho bạn trải nghiệm tốt nhất.</p>
+                            <a href="#"><img src="img/payment.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                        <div class="footer__widget">
+                            <h6>Mua sắm</h6>
+                            <ul>
+                                <li><a href="#">Quần áo</a></li>
+                                <li><a href="#">Giầy</a></li>
+                                <li><a href="#">Phụ kiện</a></li>
+                                <li><a href="#">Khuyến mại</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="footer__widget">
+                            <h6>Thông tin</h6>
+                            <ul>
+                                <li><a href="./contact.html">Liên hệ</a></li>
+                                <li><a href="#">Chính sách</a></li>
+                                <li><a href="#">Hổ trợ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                        <div class="footer__widget">
+                            <h6>Gửi ý kiến đóng góp</h6>
+                            <div class="footer__newslatter">
+                                <p>Chúng tôi sẽ luôn lắng nghe bạn và đem lại trải nghiệm tốt nhất</p>
+                                <p>Địa chỉ: 684 Phan Huy ích, p12, Gò Vấp. Hotline: 1988.0055</p>
+                                <form action="#">
+                                    <input type="text" placeholder="">
+                                    <button type="submit"><span class="icon_mail_alt"></span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="footer__copyright__text">
+                            <p>
+                                Copyright ©
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>2024
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+        <!-- Search Begin -->
+        <div class="search-model">
+            <div class="h-100 d-flex align-items-center justify-content-center">
+                <div class="search-close-switch">+</div>
+                <form class="search-model-form">
+                    <input type="text" id="search-input" placeholder="Search here.....">
+                </form>
+            </div>
+        </div>
+        <!-- Search End -->
+        <!-- Js Plugins -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script src="js/mixitup.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
